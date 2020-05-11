@@ -6,8 +6,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <ThemeChanger />
-      {/* <RenderProp /> */}
+      {/* <ThemeChanger /> */}
+      <RenderProp render={(theme, toggleFn) => (
+        <div className={theme}>
+          <button className='toggle-btn' onClick={toggleFn}>{theme}</button>
+        </div>
+      )}/>
     </div>
   );
 }
