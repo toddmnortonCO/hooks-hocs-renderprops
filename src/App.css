@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+
+.light {
+  height: 100vh;
+  background: lightgreen;
+}
+
+.dark {
+  height: 100vh;
+  background: darkblue;
+}
+
+.toggle-btn {
+  height: 70px;
+  width: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -100px;
+  border-radius: 35px;
+  border: none;
+  font-size: 25px;
+  background-color: blue;
+  color: white;
+}
