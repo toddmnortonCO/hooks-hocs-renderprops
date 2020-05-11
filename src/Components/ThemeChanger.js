@@ -1,9 +1,19 @@
 import React, {Component} from 'react';
+import toggle from '../HOCs/toggle';
+import './ThemeChanger.css';
 
-export default class ThemeChanger extends Component {
+class ThemeChanger extends Component {
     render(){
         return(
-            <div className='theme-changer'>ThemeChanger</div>
+            <div className={this.props.toggleObj.theme}>
+                <button 
+                    className='toggle-btn' 
+                    onClick={this.props.toggleObj.toggleFn}>
+                        {this.props.toggleObj.theme}
+                </button>
+            </div>
         )
     }
 }
+
+export default toggle(ThemeChanger);
