@@ -1,0 +1,12 @@
+.theme-changer {
+    height: 100vh;
+    width: 100%;
+}
+
+.light-theme {
+    background: lightgreen;
+}
+
+.dark-theme {
+    background: darkblue;
+}
