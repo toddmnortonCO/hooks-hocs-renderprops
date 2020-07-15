@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import themeToggle from '../HOCs/themeToggle';
 
 class ThemeChanger extends Component {
     render(){
-        console.log(this.props)
         return(
             <div className={this.props.themeObj.theme}>
                 <button className='toggle-btn' onClick={this.props.themeObj.toggleFn}>
@@ -14,4 +12,4 @@ class ThemeChanger extends Component {
     }
 }
 
-export default themeToggle(ThemeChanger);
+export default ThemeChanger;
